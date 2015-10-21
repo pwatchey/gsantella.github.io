@@ -299,7 +299,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage3 = $scope.checkboxModelPage4 || {
+  $scope.checkboxModelPage4 = $scope.checkboxModelPage4 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -307,7 +307,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage4 = $scope.checkboxModelPage5 || {
+  $scope.checkboxModelPage5 = $scope.checkboxModelPage5 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -315,7 +315,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage5 = $scope.checkboxModelPage6 || {
+  $scope.checkboxModelPage6 = $scope.checkboxModelPage6 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -323,7 +323,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage6 = $scope.checkboxModelPage7 || {
+  $scope.checkboxModelPage7 = $scope.checkboxModelPage7 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -331,7 +331,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage7 = $scope.checkboxModelPage8 || {
+  $scope.checkboxModelPage8 = $scope.checkboxModelPage8 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -339,7 +339,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage8 = $scope.checkboxModelPage9 || {
+  $scope.checkboxModelPage9 = $scope.checkboxModelPage9 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -347,7 +347,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage9 = $scope.checkboxModelPage10 || {
+  $scope.checkboxModelPage10 = $scope.checkboxModelPage10 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
@@ -355,7 +355,7 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
        value17 : false
   };
 
-  $scope.checkboxModelPage10 = $scope.checkboxModelPage11 || {
+  $scope.checkboxModelPage11 = $scope.checkboxModelPage11 || {
        value1 : false, value2 : false, value3 : false, value4 : false,
        value5 : false, value6 : false, value7 : false, value8 : false,
        value9 : false, value10: false, value11 : false, value12 : false,
