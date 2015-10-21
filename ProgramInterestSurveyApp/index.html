@@ -1,21 +1,17 @@
 <!doctype HTML>
 
-<html ng-app="demo">
+<html ng-app="survey">
 <head>
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>South Hills Program Interest Survey</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,7 +42,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
   <script>
-  var app = angular.module('demo', ['ui.router']);
+  var app = angular.module('survey', ['ui.router']);
 
   app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
@@ -124,44 +120,6 @@
                 },
               }
           })
-
-          .state('cars', {
-              url:'/',
-              views: {
-                'header': {
-                  templateUrl:'partials/header.html',
-                  controller: 'HomeCtrl'
-                },
-                'content': {
-                  templateUrl:'partials/cars.html',
-                  controller: 'HomeCtrl'
-                },
-                'footer': {
-                  templateUrl:'partials/footer.html',
-                  controller: 'HomeCtrl'
-                },
-              }
-          })
-
-
-          .state('bikes', {
-              url:'/',
-              views: {
-                'header': {
-                  templateUrl:'partials/header.html',
-                  controller: 'HomeCtrl'
-                },
-                'content': {
-                  templateUrl:'partials/bikes.html',
-                  controller: 'HomeCtrl'
-                },
-                'footer': {
-                  templateUrl:'partials/footer.html',
-                  controller: 'HomeCtrl'
-                },
-              }
-          })
-
 
   }]);
 
