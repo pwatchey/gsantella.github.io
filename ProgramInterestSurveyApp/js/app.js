@@ -263,7 +263,16 @@ app.controller('HomeCtrl',  ['$scope', function($scope) {
 
   $scope.programs = [
     {text:'Program1', value:$scope.countTrues($scope.checkboxModelPage1)},
-    {text:'Program2', value:$scope.countTrues($scope.checkboxModelPage2)}
+    {text:'Program2', value:$scope.countTrues($scope.checkboxModelPage2)},
+    {text:'Program3', value:$scope.countTrues($scope.checkboxModelPage3)},
+    {text:'Program4', value:$scope.countTrues($scope.checkboxModelPage4)},
+    {text:'Program5', value:$scope.countTrues($scope.checkboxModelPage5)},
+    {text:'Program6', value:$scope.countTrues($scope.checkboxModelPage6)},
+    {text:'Program7', value:$scope.countTrues($scope.checkboxModelPage7)},
+    {text:'Program8', value:$scope.countTrues($scope.checkboxModelPage8)},
+    {text:'Program9', value:$scope.countTrues($scope.checkboxModelPage9)},
+    {text:'Program10', value:$scope.countTrues($scope.checkboxModelPage10)},
+    {text:'Program11', value:$scope.countTrues($scope.checkboxModelPage11)}
   ];
 
   $scope.checkboxModelPage1 = $scope.checkboxModelPage1 || {
