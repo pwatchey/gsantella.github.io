@@ -1,0 +1,221 @@
+<!doctype HTML>
+
+<html ng-app="demo">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+  <form name="myForm" ng-controller="HomeCtrl">
+
+  <div ui-view="header"></div>
+  <div ui-view="content"></div>
+  <div ui-view="footer"></div>
+
+  </form>
+
+  </div>
+
+  <script src="../angular.js"></script>
+  <script src="../angular-ui-router.js"></script>
+  <script src="../underscore.js"></script>
+
+  <script>
+  var app = angular.module('demo', ['ui.router']);
+
+  app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise('/');
+
+      $stateProvider
+          .state('home', {
+              url:'/',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/content.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+
+              }
+          })
+
+  		.state('page1', {
+              url:'/page1',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/page1.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+              }
+          })
+
+  		.state('page2', {
+              url:'/page2',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/page2.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+              }
+          })
+
+  		.state('page3', {
+              url:'/page3',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/page3.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+              }
+          })
+
+          .state('cars', {
+              url:'/',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/cars.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+              }
+          })
+
+
+          .state('bikes', {
+              url:'/',
+              views: {
+                'header': {
+                  templateUrl:'partials/header.html',
+                  controller: 'HomeCtrl'
+                },
+                'content': {
+                  templateUrl:'partials/bikes.html',
+                  controller: 'HomeCtrl'
+                },
+                'footer': {
+                  templateUrl:'partials/footer.html',
+                  controller: 'HomeCtrl'
+                },
+              }
+          })
+
+
+  }]);
+
+  app.controller('HomeCtrl',  ['$scope', function($scope) {
+
+  	$scope.countTrues = function(model) {
+  		var count = 0;
+  		angular.forEach(model, function(checkbox) {
+  			count += checkbox ? 1 : 0;
+  		});
+  		return count;
+  	}
+
+  	$scope.findWins = function() {
+  		//order $scope.programs
+  		$scope.programs = $scope.programs.sort(function(a, b) {
+  			return (b[value] > a[value]);
+  		});
+
+  		//loop through in results view
+
+  	}
+
+  	$scope.programs = [
+  		{text:'PAGE1', value:$scope.countTrues($scope.checkboxModel)},
+  		{text:'PAGE2', value:$scope.countTrues($scope.checkboxModelPage2)}
+  	];
+
+  	$scope.checkboxModel = $scope.checkboxModel || {
+  		   value1 : false,
+  		   value2 : false,
+  		   value3 : false,
+  		   value4 : false,
+  		   value5 : false,
+  		   value6 : false,
+  		   value7 : false
+
+  	};
+
+  	$scope.checkboxModelPage2 = $scope.checkboxModelPage2 || {
+  		   value1 : false,
+  		   value2 : false,
+  		   value3 : false,
+  		   value4 : false,
+  		   value5 : false,
+  		   value6 : false,
+  		   value7 : false
+
+  	};
+  }]);
+
+  </script>
+
+</body>
+</html>
